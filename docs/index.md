@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+Statistics and trend prediction of COVID-19 cases in NYC
+covid.jpg
 
-You can use the [editor on GitHub](https://github.com/Zhipeng98/Statistics-of-Covid19/edit/gh-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Theme:
+Covid-19
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Description
+In this Project, I will do the statistics and the prediction of COVID-19 cases in NYC. I will show these statistical data and the trend of the cases in future by graphs, and make them visualization.
 
-### Markdown
+Relevance:
+It is important to analyze and predict COVID-19 cases which are related to all of us. According to analysis the number of inflected people, death cases and prediction, it will help us figure out the efficiency of the vaccine, the effectiveness of the control and the trend of COVID-19.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Data Sources:
+Here is the data source of the COVID-19 data: https://data.cityofnewyork.us/Health/COVID-19-Daily-Counts-of-Cases-Hospitalizations-an/rc75-m7u3/data.
 
-```markdown
-Syntax highlighted code block
+Data Analysis and Visualization
+The graph shows the trend and number of the infection, the independent variable is the Date, and the dependent variable is Number of infections. According to analyze the data of the infected cases, the maximum number of the infections per day is 6589 people, and the minimum number is 0 case. The average of the number of infections is 1499 people per day. From the graph, it shows that the number of infected is increasing quickly at the beginning of 2020. Between January and February 2021, the number of infections reached its maximum per day.After February 2021, the infection cases were decreasing because people began to vaccinate.Here is the graph:cases per day  of infections.png
 
-# Header 1
-## Header 2
-### Header 3
+Here is a graph that shows the trending of 7_day average cases: 7_day average cases.png
 
-- Bulleted
-- List
+This graph shows the trend of the death cases per day. According to the analysis, the maximum of the death number perday is 598 people in NYC,and the minimum number of death is 0 people per day. The average of the death number per day is 48 people per day. According to the graph , it shows that after April 2020, the death number is decreasing because people were aware the danger of Covid-19, and they wore masks and vaccinated. Here is the graph of death cases trending: death cases per day.png
 
-1. Numbered
-2. List
+Here is a graph that shows the trending of 7_day average death :7_day death average.png
 
-**Bold** and _Italic_ and `Code` text
+Prediction:
+For the case_count prediction, I use linear regression model to predict the trending of the case count in future. According to the train_test data, the cofficient is -0.857, and the intercept is 633865. The linear function is : y=-0.875x+633865. x is the date which is transformed to the proleptic Gregorian ordinal of the date. According to the predicted data and function, it shows that the case count of infections will decrease in future.Here is the graph:prediction of cases in future.png
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Zhipeng98/Statistics-of-Covid19/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+For death_count prediction, I use linear regression mode to predict the death number per day in the future.By the train_test data, the cofficient is -0.264, and the intercept is 194693. The linear function is : y=--0.264x+194693. x is the date which is transformed to the proleptic Gregorian ordinal of the date. According to the graph, it shows that the death counts are decreasing rapidly in future. Here is the graph:prediction of death_count per day.png
